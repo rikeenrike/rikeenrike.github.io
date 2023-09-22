@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    color: #ffffff;
+}
+
+
+body{
+    background-color: rgba(21, 21, 21, 1);
+}
+
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    background-color: rgba(27, 27, 27, 1);
+    border-radius: 20px;
+    box-shadow: 2px 2px 40px rgba(0, 102, 255, 0.25);
+}
+
+.header{
+  position: fixed;
+  top: 5%;
+  left: 0;
+  width: 100%;
+  padding: 20px 8%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.burger{
+    position: absolute;
+    top: 25%;
+    left: 100px;
+  
+  }
+  
+  .navbar a{
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 10px;
+    padding: 6px 13px;
+    border-radius: 60px;
+    transition: .3s ease;
+  }
+  
+  .navbar a:hover{
+      background-color: rgba(39, 39, 39, 1);
+      box-shadow: -2px 2px 5px rgba(0,0,0,0.2);
+  }
+  .logo{
+    text-decoration: none;
+  }
+  
+  .sidebar {
+    position: absolute;
+    width: 4%;
+    height: 35%;
+    top: 30%;
+    left: 3%;
+    background-color: rgba(21, 21, 21, 1);
+    border-radius: 40px;
+    box-shadow: 8px 8px 40px 0px rgba(0, 0, 0, 0.25), 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Card,
+  .Layer,
+  .Heart {
+   position: relative;
+    left: 35%;
+    margin: -70% -70%; /* Adjust the margin as needed to control the vertical spacing */
+  }
+
+  .Summary, .expense, .recently{
+    position: absolute;  
+    flex-shrink: 0;
+    border-radius: 21px;
+    background: #252525;
+    box-shadow: 8px 8px 30px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .Summary{
+
+    top: 20%;
+    left: 10%;
+    width: 40%;
+    height: 43%;
+  }
+  
+  .expense{
+    top: 20%;
+    left: 53%;
+    width: 36%;
+    height: 75%;
+  }
+  
+  .recently{
+    top: 65%;
+    left: 10%;
+    width: 40.2%;
+    height: 30%;
+  }
+
+  .summarytext, .expensestext, .recentlytext{ 
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .usercard{
+    position: absolute;
+    width: 65%;
+    top: 10%;
+    left: 5%;
+  }
+
+  .weeklyreport{
+    position: absolute;
+    width: 30%;
+    top: 10%;
+    left: 65%;
+  }
+
+  .balancemoney{
+    position: absolute;
+    top: 20%;
+    left: 11%;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  
+  #pesosign{
+    font-size: 15px;
+  }
+
+  .totalexpenses{
+    position: relative;
+    width: 80%;
+    top: 35%;
+    left: 10%;
+  }
+
+  .weeklylimiter{
+    font-weight: 800;
+  }
+
+  .weeklylimits{
+    position: absolute;
+    top: 70%;
+    left: 67%;
+  }
+
+  .weeklytext{
+    position: absolute;
+    top: 77%;
+    left: 67%;
+    font-weight: 100;
+    font-size: 12px;
+  }
+
+  .balance{
+    position: absolute;
+    top: 30%;
+    left: 11%;
+    font-weight: 100;
+    font-size: 13px;
+  }
+
+  .rightarrow, .leftarrow{
+    position: absolute;
+  }
+  
+  .rightarrow{
+    top: 45%;
+    left: 6%;
+  }
+  
+  .leftarrow{
+    top: 45%;
+    left: 62%;
+  }
+
+  .toppart{
+    position: absolute;
+    width: 90%;
+    top: 13%;
+    left: 4%;
+  }
+
+  .enteramount, .setweekly{
+    position: relative;
+    top: 55%;
+    left: 10%;
+    font-size: 20px;
+    margin-top: 50px;
+  }
+
+  .textfield1{
+    position: absolute;
+    background-color: rgba(27, 27, 27, 1);
+    box-shadow: 8px 8px 30px 0px rgba(0, 0, 0, 0.25);
+    top: 67%;
+    left: 10%;
+    width: 180px;
+    height: 30px;
+    border-radius: 5px;
+    padding-top: 5px;
+    word-spacing: 130px;
+  }
+
+  .textfield2{
+    position: absolute;
+    background-color: rgba(27, 27, 27, 1);
+    box-shadow: 8px 8px 30px 0px rgba(0, 0, 0, 0.25);
+    top: 78%;
+    left: 10%;
+    width: 180px;
+    height: 100px;
+    border-radius: 5px;
+    padding-top: 5px;
+
+  }
+
+  .selectorig{
+    position: absolute;
+    width: 40%;
+    top: 60%;
+    left: 50%;
+  }
+  
+  
+
+  .content-table{
+    position: absolute;
+    top: 13%;
+    left: 1%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 15px;
+    min-width: 400px;
+  }
+  
+  .content-table thead tr th{
+    text-align: left;
+    font-weight: 200 !important;
+  }
+  
+  .content-table th,
+  .content-table td{
+    padding: 12px 43px;
+  }
+  
+  .content-table tbody tr{
+    border-bottom: 1px solid white;
+  }
+  
+  .content-table .money {
+    text-align: right;
+    font-weight: 800;
+  }
+  
+  .content-table .amount {
+    color: red;
+  }
+  
+  .content-table .info{
+    color: grey;
+    font-weight: 300;
+  }
+  
+  .content-table .To{
+    color: rgba(155, 235, 253, 1);
+  }
+  
+  .content-table .Cat{
+    color: #AEF5FF;
+  }
+  
+  .content-table .Date{
+    color: rgba(255, 226, 152, 1);
+  }
+  
